@@ -3,15 +3,17 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 
 namespace Dotnet.Models;
-[Table("Produto")]
+[Table("Produtos")]
 public class Produtos
 {
     [Column("Id")]
-    [Display(Name="Código")]
+    [Display(Name="Code")]
     public int Id { get; set; }
-    [Column("Nome")]
-    [StringLength(20)]
-    [Display(Name="Nome")]
-    public string Nome { get; set; }
+    [Column("Name")]
+    [Display(Name="Name")]
+    public string Name { get; set; }
+    [Column("Description")]
+    [Display(Name="Description")]
+    public string Description { get; set; }
 
 }

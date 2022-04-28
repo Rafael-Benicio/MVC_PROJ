@@ -18,14 +18,6 @@ public class HomeController : Controller
         return View();
     }
 
-    // public IActionResult Produtos()
-    // {
-    //     Produtos produto=new Produtos();
-    //     produto.Id=1;
-    //     produto.Nome="Rafael";
-        
-    //     return View(produto);
-    // }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()

@@ -19,8 +19,20 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/rafaelb/Documentos/Programa/NET/Dotnet/Views/Produtos/index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHV0b3MvaW5kZXguY3NodG1s
+[/home/rafaelb/Documentos/Programa/NET/Dotnet/Views/Produtos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHV0b3MvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/rafaelb/Documentos/Programa/NET/Dotnet/Views/Produtos/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHV0b3MvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/rafaelb/Documentos/Programa/NET/Dotnet/Views/Produtos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHV0b3MvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/rafaelb/Documentos/Programa/NET/Dotnet/Views/Produtos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHV0b3MvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/rafaelb/Documentos/Programa/NET/Dotnet/Views/Shared/Error.cshtml]
