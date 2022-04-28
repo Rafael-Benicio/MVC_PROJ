@@ -1,14 +1,10 @@
 ﻿@model IEnumerable<Dotnet.Models.Produtos>
+    
+<h1>Listagem dos Produtos</h1>
 
-@{
-    ViewData["Title"] = "Index";
-}
-
-<h1>Index</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+<h4>
+    Crie um novo item : <a class="btn btn-success" type="button" asp-action="Create">Criar</a>
+</h4>
 <table class="table">
     <thead>
         <tr>
@@ -19,17 +15,17 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td class="btn-group">
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-outline-info" >Detalhes</a>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-outline-warning" >Edite</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-outline-danger" >Delete</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

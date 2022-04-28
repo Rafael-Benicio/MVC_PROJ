@@ -1,41 +1,47 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
-
-<div class="text-center">
-    <h1 class="display-4">PKeep</h1>
-    <p>Teoricamente é uma 'aplicação' para você registrar seus produtos e escrever um pequeno comentário sobre ele Isso claro, no papel, porque essa aplicação foi um forma de treinar o desenvolvimento <strong>ASP NET</strong> nesse meio periodo</p>
-    
-    <div>
-        <h2>A realização desse projeto foi possivel graças a : </h2>
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-xs-6 thumb">
-                <a class="thumbnail" href="https://github.com/" target="_black">
-                    <img class="img-responsive half-width" src="~/imgs/gh_logo.png" alt="">
+﻿    <div class="text-center">
+        <div>
+            <h1 class="display-4">PKeep</h1>
+            <p>É Teoricamente é uma 'aplicação' para você registrar seus produtos e escrever um pequeno comentário sobre ele, Isso claro, no papel, <br>porque essa aplicação foi um forma de treinar o desenvolvimento <strong>ASP NET</strong> nesse meio periodo</p>
+        </div>
+        <div class="my-5 ">
+            <a asp-controller="Produtos" asp-action="Index" >
+                <button class="btn btn-success" >Ver Produtos</button>
+            </a>
+        </div>
+        <div>
+            <h2 class="my-5">Meus agradecimentos a : </h2>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-xs-6 thumb">
+                    <a class="thumbnail" href="https://github.com/" target="_black">
+                        <img class="img-responsive half-width" src="imgs/gh_logo.png" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-6 thumb">
+                    <a class="thumbnail" href="https://stackoverflow.com/" target="_black">
+                        <img class="img-responsive half-width" src="imgs/so_logo.png" alt="">
+                    </a>
+                </div>
+             <div>
+        </div>
+        <div>
+            <h2 class="my-5">Visual Studio</h2>
+            <p>Tive uma pessima experiência como o <a href="https://visualstudio.microsoft.com/pt-br/downloads/" target="_blank" rel="Visual Studio">Visual Studio</a></p>
+            <div class="vs_box">
+                <a href="https://visualstudio.microsoft.com/pt-br/downloads/" target="_blank" rel="Visual Studio">
+                    <img id="vs_img" class="half-width" src="imgs/VisualStudio.jpg" alt="Uma imagem da logo visual studio">
+                </a>
+                <p>Nada pessoal, mas até o Android Studio consegue ser mais fluido (obviamente isso está muito relacionado a minha maquina).</p>
+            </div>
+        </div>
+        <div>
+            <h2 class="my-5">Sql Server</h2>
+            <p>Meu erro foi ter confiado no instalador automatico do <a href="https://www.microsoft.com/pt-br/sql-server/sql-server-downloads" target="_blank" rel="Visual Studio">SQLServer</a>, oh programinha complicado. O pior é que é muito dificil de rastrear as pastas <br>onde estão as coisas e as mensagens de erro do windows é quase a mesma coisa que nada <br> (leia como se estivessa falando respeitosamente).</p>
+            <div >
+                <a href="https://www.microsoft.com/pt-br/sql-server/sql-server-downloads" target="_blank" rel="sql server">
+                    <img class="half-width" src="imgs/sqlserver.jpg" alt="Uma imagem da logo SQL Server">
                 </a>
             </div>
-            <div class="col-lg-6 col-md-6 col-xs-6 thumb">
-                <a class="thumbnail" href="https://stackoverflow.com/" target="_black">
-                    <img class="img-responsive half-width" src="~/imgs/so_logo.png" alt="">
-                </a>
-            </div>
-         <div>
+                <p>Muita pasta pra pouca coisa</p>
+        </div>
+        
     </div>
-    <div>
-        <h2>Visual Studio</h2>
-        <p>Tive uma pessima experiência como o <a href="https://visualstudio.microsoft.com/pt-br/downloads/" target="_blank" rel="Visual Studio">Visual Studio</a></p>
-        <a href="https://visualstudio.microsoft.com/pt-br/downloads/" target="_blank" rel="Visual Studio">
-            <img class="half-width" src="~/imgs/VisualStudio.jpg" alt="Uma imagem da logo visual studio">
-        </a>
-        <p>Nada pessoal, mas até o Android Studio consegue ser mais fluido (obviamente isso está muito relacionado a minha maquina).</p>
-    </div>
-    <div>
-        <h2>Sql Server</h2>
-        <p>Meu erro foi ter confiado no instalador automatico do <a href="https://www.microsoft.com/pt-br/sql-server/sql-server-downloads" target="_blank" rel="Visual Studio">SQLServer</a>, oh programinha complicado. O pior é que é muito dificil de rastrear as pastas onde estão as coisas e as mensagens de erro do windows é quase a mesma coisa que nada(leia como se estivessa falando respeitosamente).</p>
-        <a href="https://www.microsoft.com/pt-br/sql-server/sql-server-downloads" target="_blank" rel="sql server">
-            <img class="half-width" src="~/imgs/sqlserver.jpg" alt="Uma imagem da logo SQL Server">
-        </a>
-        <p>Muita pasta pra pouca coisa</p>
-    </div>
-    
-</div>

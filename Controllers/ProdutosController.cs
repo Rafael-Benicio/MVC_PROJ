@@ -33,6 +33,26 @@ public class ProdutosController : Controller
     {   
         return View();
     }
+
+    public async Task<IActionResult> Details(int? id)
+    {   
+        // Trata o valor de id pra ver se ele não é nulo
+        if (id == null)
+        {
+            return NotFound();
+        }
+        // Armazena em produto o primeiro registro que for encontrado
+        // com valor correspondente ao e ID
+        var produtos = await _context.Produtos
+            .FirstOrDefaultAsync(m => m.Id == id);
+        // Checar o valor retornado para produtos não é nulo
+        if (produtos == null)
+        {
+            return NotFound();
+        }
+        // rotorna o registro encontrado na tabela do banco
+        return View(produtos);
+    }
     
     public async Task<IActionResult> Edit(int? id)
     {   
